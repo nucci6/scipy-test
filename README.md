@@ -11,7 +11,7 @@ Two Python scripts are provided for testing:
 For either test, we must first set up the environment by loading the appropriate modules and creating a virtual environment. The virtual environment is required to install testing dependencies without needing write access to the central software stack.
 
 **1. Load the required modules:**
-```bash
+```
 # Clear existing modules
 module purge
 
@@ -19,6 +19,8 @@ module purge
 module use /storage/icds/sw8/modulefiles_rc2026/linux-rhel8-x86_64/Core
 module load gcc
 module load py-scipy
+```
+
 (Note: You can use module spider scipy to verify available versions if needed).
 
 2. Create and activate a virtual environment: The --system-site-packages flag is critical here, as it allows the virtual environment to see the central SciPy installation.
