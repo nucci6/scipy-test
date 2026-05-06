@@ -23,7 +23,7 @@ module load py-scipy
 
 (Note: You can use module spider scipy to verify available versions if needed).
 
-**2. Create and activate a virtual environment: **
+**2. Create and activate a virtual environment:**
 
 The ```--system-site-packages``` flag is critical here, as it allows the virtual environment to see the central SciPy installation.
 
@@ -32,7 +32,7 @@ python -m venv --system-site-packages ~/scipy_test_env
 source ~/scipy_test_env/bin/activate
 ```
 
-**3. Install testing dependencies: **
+**3. Install testing dependencies:**
 
 ```
 pip install pytest hypothesis pooch
